@@ -10,10 +10,13 @@ namespace FredApp.Common.Models
     public class Genre
     {
         [Key]
+        [DataMember]
         public virtual int GenreId { get; set; }
 
         [DataMember]
         public virtual string Name { get; set; }
+
+        [DataMember]
         public virtual string Description { get; set; }
 
         [IgnoreInsert]

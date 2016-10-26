@@ -1,7 +1,7 @@
-﻿using FredApp.Data.Interfaces;
-using System.Configuration;
+﻿using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using FredApp.Data.Interfaces;
 
 namespace FredApp.Data.DataAccess
 {

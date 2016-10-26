@@ -1,3 +1,5 @@
-﻿
+﻿(function () {
 
-var app = angular.module("FredApp", []);
+    angular.module("FredApp", ["BaseService"]);
+
+})();

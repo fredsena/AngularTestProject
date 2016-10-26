@@ -8,7 +8,9 @@ namespace FredApp.Service
     {
         public IEnumerable<Genre> GetList()
         {
-            return new GenreRepository().GetList();
+            var repo = new GenreRepository();
+
+            return repo.GetList();
         }
     }
 }

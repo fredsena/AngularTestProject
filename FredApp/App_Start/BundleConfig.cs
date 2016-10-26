@@ -24,8 +24,10 @@ namespace FredApp
                       "~/Content/site.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
-                      "~/Scripts/angular.js", "~/App/app.js"));
+                      "~/Scripts/angular.js", "~/Scripts/angular-resource.min.js", "~/App/app.js", "~/App/Common/Services/BaseService.js"));
 
+            //bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+            //          "~/Scripts/angular.js", "~/Scripts/angular-resource.min.js", "~/App/app.js"));
 
         }
     }

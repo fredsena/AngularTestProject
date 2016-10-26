@@ -5,7 +5,24 @@
 
 <h2>Index</h2>
 
-<div>
-    <p>Name : <input type="text" ng-model="name"></p>
-    <h1>Hello {{name}}</h1>
+@*<script type="text/javascript" src="~/App/Common/Services/BaseService.js"></script>*@
+<script type="text/javascript" src="~/App/Common/Services/GenreService.js"></script>
+
+<script type="text/javascript" src="~/App/Genre/GenreController.js"></script>
+
+
+
+<div ng-app="FredApp" ng-controller="GenreController">
+
+    {{name}}
+
+    <br />
+
+    {{List}}
+
 </div>
+
+@section scripts
+{ 
+    @*<script type="text/javascript" src="@Url.Content("~/App/Genre/GenreController.js")"></script>*@ 
+}
