@@ -3,26 +3,38 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+@*<h2>Index</h2>*@
 
 @*<script type="text/javascript" src="~/App/Common/Services/BaseService.js"></script>*@
 <script type="text/javascript" src="~/App/Common/Services/GenreService.js"></script>
-
 <script type="text/javascript" src="~/App/Genre/GenreController.js"></script>
-
-
 
 <div ng-app="FredApp" ng-controller="GenreController">
 
-    {{name}}
 
-    <br />
-
-    {{List}}
-
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Description
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="l in List">
+                <td>{{l.Name}}</td>
+                <td>{{l.Description}}</td>
+                <td><button type="button" class="btn btn-primary" data-target="#edit" data-toggle="modal" ng-click="EditarItem(l, false)">Edit</button></td>
+            </tr>
+        </tbody>
+    </table>
+    @Html.Partial("Editar")
 </div>
 
 @section scripts
-{ 
-    @*<script type="text/javascript" src="@Url.Content("~/App/Genre/GenreController.js")"></script>*@ 
+{
+    @*<script type="text/javascript" src="@Url.Content("~/App/Genre/GenreController.js")"></script>*@
 }

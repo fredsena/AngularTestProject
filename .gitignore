@@ -245,3 +245,4 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /FredApp/Properties/PublishProfiles/fredsena - Web Deploy.pubxml
+/stuff.txt

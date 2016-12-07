@@ -22,6 +22,37 @@ namespace FredApp.Api
         }
 
 
+        [HttpPut]
+        public IHttpActionResult Update([FromBody] Genre model)
+        {
+            var result = service.Update(model);
+
+            if (result.Status)
+            {
+                return Content(HttpStatusCode.Accepted, "Success");
+            }
+
+            return Content(HttpStatusCode.NotFound, result.Message);
+        }
+
+
+
+        [HttpPost]
+        public IHttpActionResult Insert([FromBody] Genre model)
+        {
+            var result = service.Insert(model);
+
+            if (result.Status)
+            {
+                return Content(HttpStatusCode.OK, "Success");
+            }
+
+            return Content(HttpStatusCode.NotFound,  result.Message);
+        }
+
+
+
+
         //// GET: api/Genre
         //public IEnumerable<string> Get()
         //{

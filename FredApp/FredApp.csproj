@@ -181,6 +181,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Genre\Index.cshtml" />
+    <Content Include="Views\Genre\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FredApp.Common\FredApp.Common.csproj">
